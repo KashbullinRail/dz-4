@@ -25,7 +25,7 @@ public class ExampleFour {
         System.out.println("\n");
         System.out.println("Задание 2");
         int d = 3, a = 0;
-        while ( d <= 31) {
+        while (d <= 31) {
             if (a % 7 == 0) {
                 System.out.println("Сегодня пятница," + d + "-е число");
             }
@@ -39,14 +39,17 @@ public class ExampleFour {
         int year = 2021; // Для соответствия дат указанных в ДЗ необходимо ввести: 1975 or 2054.
         int z = year;
         for (int b = 0; b < 200; b++) {
-           if (b %79 == 0) {
-               System.out.println(z);
-           } z--;
-        } z = year;
-        for (int c = 0; c < 100; c++) {
-            if (c %79 == 0 & z != year) {
+            if (b % 79 == 0) {
                 System.out.println(z);
-            } z++;
+            }
+            z--;
+        }
+        z = year;
+        for (int c = 0; c < 100; c++) {
+            if (c % 79 == 0 & z != year) {
+                System.out.println(z);
+            }
+            z++;
         }
     }
 }
